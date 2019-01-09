@@ -95,9 +95,11 @@
 
     var galleryThumbs = new Swiper('.gallery-thumbs', {
       spaceBetween: 5,
-      slidesPerView: 10,
+      slidesPerView: 8,
       loop: true,
       freeMode: true,
+      height:'auto',
+      watchSlidesProgress:'true',
       loopedSlides: 10, //looped slides should be the same
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
@@ -107,9 +109,10 @@
   },
     });
     var galleryTop = new Swiper('.gallery-top', {
-      spaceBetween: 10,
+      spaceBetween: 5,
       loop:true,
-      autoHeight:true,
+      height:'auto',
+      effect:'flip',
       loopedSlides: 10, //looped slides should be the same
       navigation: {
         nextEl: '.swiper-button-next',
